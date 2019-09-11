@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+      <h1 class="txt">package-main page2</h1>
       <img class="img" src="../../static/imgs/megalo_logo.png" @touchstart="changeStat">
       <img class="img" src="../../../native/tabbar/home.png" @touchstart="changeStat">
       <hello-world :color="color"></hello-world>

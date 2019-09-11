@@ -1,10 +1,11 @@
 <template>
   <div class="app">
+      <h1 class="txt">package-main page1</h1>
       <img class="img" src="../../static/imgs/megalo_logo.png" @touchstart="changeStat">
-      <img class="img" src="../../native/tabbar/home.png" @touchstart="changeStat">
+      <img class="img" src="../../../native/tabbar/home.png" @touchstart="changeStat">
       <hello-world :color="color"></hello-world>
       <h1 class="txt" v-show="t%2==1">click logo::{{t}}</h1>
-      <h1 class="txt">hello111111xxxxx</h1>
+      <h1 class="txt">hello2</h1>
   </div>
 </template>
 

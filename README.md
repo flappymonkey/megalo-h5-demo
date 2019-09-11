@@ -2,6 +2,12 @@
 
 ## 运行
 
+h5：
+
+```bash
+npm run dev:h5
+```
+
 微信小程序：
 
 ```bash

@@ -11,13 +11,16 @@ export default {
   config: {
     // pages 的首个页面会被编译成首页
     pages: [
-      'pages/hello/index',
-      'pages/my/index'
+      'pages/page1/index',
+      'pages/page2/index'
     ],
     subPackages: [
       {
-        root: 'package-new',
-        pages: ['pages/hello2/index']
+        root: 'package-main',
+        pages: [
+          'pages/page1/index',
+          'pages/page2/index'
+        ]
       }
     ],
     tabBar: {

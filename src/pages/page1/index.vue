@@ -1,8 +1,10 @@
 <template>
   <div class="app">
-      <img class="img" :src="logo" @touchstart="changeStat">
-      <hello-world :msg="acc" :color="color"></hello-world>
-      <h1 class="txt">my</h1>
+      <h1 class="txt">page1</h1>
+      <img class="img" src="../../static/imgs/megalo_logo.png" @touchstart="changeStat">
+      <img class="img" src="../../native/tabbar/home.png" @touchstart="changeStat">
+      <hello-world :color="color"></hello-world>
+      <h1 class="txt" v-show="t%2==1">click logo::{{t}}</h1>
   </div>
 </template>
 
@@ -14,44 +16,43 @@ export default {
   },
   data () {
     return {
-      logo: 'https://user-images.githubusercontent.com/20720117/48262986-80e02780-e45f-11e8-8426-2872916adad9.png',
-      color: '#007d37',
-      acc: 'hello bigMeow'
+      t: 1,
+      color: '#007d37'
     }
   },
   beforeCreate () {
-    console.log('Page [my] Vue beforeCreate')
+    console.log('Page [hello] Vue beforeCreate')
   },
   created () {
-    console.log('Page [my] Vue created')
+    console.log('Page [hello] Vue created')
     // var appInstance = getApp()
     // console.log(appInstance.globalData) // I am global data
   },
   beforeMount () {
-    console.log('Page [my] Vue beforeMount')
+    console.log('Page [hello] Vue beforeMount')
   },
   mounted () {
-    console.log('Page [my] Vue mounted')
+    console.log('Page [hello] Vue mounted')
   },
   onLoad (options) {
     // Do some initialize when page load.
-    console.log('Page [my] onLoad')
+    console.log('Page [hello] onLoad')
   },
   onReady () {
     // Do something when page ready.
-    console.log('Page [my] onReady')
+    console.log('Page [hello] onReady')
   },
   onShow () {
     // Do something when page show.
-    console.log('Page [my] onShow')
+    console.log('Page [hello] onShow')
   },
   onHide () {
     // Do something when page hide.
-    console.log('Page [my] onHide')
+    console.log('Page [hello] onHide')
   },
   onUnload () {
     // Do something when page close.
-    console.log('Page [my] onUnload')
+    console.log('Page [hello] onUnload')
   },
   /**
    * for other event handlers, please check https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html
@@ -65,7 +66,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .app{
   padding-top: 100px;
   .img {
